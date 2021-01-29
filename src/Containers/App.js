@@ -54,6 +54,7 @@ fetchData = () => {
 
     handleChange = (event) => {
       this.setState({ value: event.target.value }) 
+        this.handleSubmit();
     }
 
     handleSubmit = () => { 
@@ -63,7 +64,6 @@ fetchData = () => {
     }
 
 render() {
-  this.handleSubmit();
   const { searchfield, isLoading, profiles } = this.state;
   const filteredProfiles = profiles.filter(profile => {
     return profile.username.toLowerCase().includes(searchfield.toLowerCase());
