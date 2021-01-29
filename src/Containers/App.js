@@ -54,11 +54,7 @@ fetchData = () => {
 
     handleChange = (event) => {
       this.setState({ value: event.target.value }) 
-        this.handleSubmit();
-    }
-
-    handleSubmit = () => { 
-      if (
+        if (
         this.state.value = 'Alphabetical'
         ) return this.AlphabeticalOrder();
     }
