@@ -1,0 +1,11 @@
+.Collapsible__trigger {
+    border: 1px solid lightgrey;
+    font-size: medium;
+    padding: 7px;
+    padding-inline: 50px;
+    cursor: pointer;
+}
+
+.Collapsible {
+    margin-bottom: 30px;
+}
